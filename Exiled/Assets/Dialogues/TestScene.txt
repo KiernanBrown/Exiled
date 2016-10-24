@@ -1,0 +1,16 @@
+Start
+Prince|Welcome to Exiled!|0
+Prince|I am the Prince, and I'll be walking you through this demo build.|0
+Prince|As you've probably already noticed by now, you can left click or press the spacebar to advance the text.|3
+Prince|In the future you will be able to save, load, and skip through read text.|5
+Prince|But as of right now, none of that has been implemented yet...|2
+Prince|Don't worry though, Kiernan is working on adding these features, and much more to the game!|3
+Prince|In this build of the game, you can have characters talk and have images change as they talk.|0
+Prince|You can see the format for how to do this in the SceneFormat.txt file. Try messing around with this yourself!|0
+Prince|That's all for this build!|0
+Prince|The todo list for the next build is to have Action Statements, statements that allow you to move the character around the screen.|0
+Prince|Kiernan is also going to be working on adding a system to create menus that allow you to ask the player to make a choice!|0
+Prince|And after that's all done, it'll be moving onto creating a system to train skills and doing skill checks!|5
+Prince|There will also be combat, building relationships with other characters, moving between towns and kingdoms...|5
+Prince|But a lot of that stuff will be far off in the future.|4
+Prince|Thanks for taking a look at this build of Exiled! I hope you enjoyed what's here so far.|3

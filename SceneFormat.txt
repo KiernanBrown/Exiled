@@ -1,0 +1,39 @@
+Format:
+
+Dialogue Statement:
+Character|Text|Image
+
+Character: Name of the character who is speaking.
+Text: Text that the character is speaking.
+Image: Image file being displayed for the character. If image is left blank, use previous image.
+Example:
+Prince|I am the prince.|0
+
+
+NOT IMPLEMENTED YET
+|
+|
+Action Statement:
+Character|Action
+
+Character: Name of the character doing the action.
+Action: Action is the character doing, Enter Right, Enter Left, Move Right, Move Left, Vanish, etc.
+Example: 
+Prince|Move Right
+
+
+Skill Check:
+If(SkillName|SkillLevel)
+{
+	Dialogue Statement 1
+}
+Else
+{
+	Dialogue Statement 2
+}
+
+SkillName: Name of the skill being checked.
+SkillLevel: Level the skill needs to be to pass the skill check.
+If the skill check is passed, everything within the curly brackets will be done. If not, it is skipped.
+An Else can be added after doing a skill check, and anything within the curly brackets following it will be done. The Else is optional.
+The Skill Check might be changed in the future, if we decide to add partial successes, or other features.

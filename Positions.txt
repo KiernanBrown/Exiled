@@ -1,0 +1,11 @@
+This is a list of the valid positions that characters can be placed in.
+
+Center: Positioned directly in the center of the screen.
+Right: Positioned to the right of the screen.
+Off Right: Positioned offscreen, on the right side.
+Center Right: Positioned to the right of the screen, closer to the center.
+Far Right: Positioned to the right of the screen, closer to the edge.
+Left: Positioned to the left of the screen.
+Off Left: Positioned offscreen, on the left side.
+Center Left: Positioned to the left of the screen, closer to the center.
+Far Left: Positioned to the left of the screen, closer to the edge.
