@@ -9,7 +9,8 @@ public class FileParser : MonoBehaviour
 
     // TODO: Change how images are handled.
 
-	List<DialogueLine> lines;
+	//List<DialogueLine> lines;
+    List<Line> lines;
 
 	struct DialogueLine
     {
@@ -28,7 +29,7 @@ public class FileParser : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		lines = new List<DialogueLine>();
+		lines = new List<Line>();
 		LoadDialogue ("TestScene.txt");
 	}
 	
@@ -42,7 +43,7 @@ public class FileParser : MonoBehaviour
     {
         if(lineNumber < lines.Count)
         {
-            return lines[lineNumber].name;
+            return lines[lineNumber].nm;
         }
         return "";
     }
@@ -63,6 +64,42 @@ public class FileParser : MonoBehaviour
             return lines[lineNumber].pose;
         }
         return 0;
+    }
+
+    public string GetLineType(int lineNumber)
+    {
+        if(lineNumber < lines.Count)
+        {
+            return lines[lineNumber].type;
+        }
+       return "";
+    }
+
+    public string GetAction(int lineNumber)
+    {
+        if (lineNumber < lines.Count)
+        {
+            return lines[lineNumber].action;
+        }
+        return "";
+    }
+
+    public string GetMoving(int lineNumber)
+    {
+        if (lineNumber < lines.Count)
+        {
+            return lines[lineNumber].moving;
+        }
+        return "";
+    }
+
+    public string GetFacing(int lineNumber)
+    {
+        if (lineNumber < lines.Count)
+        {
+            return lines[lineNumber].facing;
+        }
+        return "";
     }
 
     void LoadDialogue(string filename)
@@ -89,14 +126,37 @@ public class FileParser : MonoBehaviour
                     // This is an Action Statement
                     if (line_values.Length == 2)
                     {
-
+                        Line nLine = new Line("Action");
+                        nLine.nm = line_values[0];
+                        switch (line_values[1])
+                        {
+                            case "Move Right": nLine.action = "Move";
+                                nLine.moving = "Right";
+                                break;
+                            case "Move Left": nLine.action = "Move";
+                                nLine.moving = "Left";
+                                break;
+                            case "Face Right": nLine.action = "Face";
+                                nLine.facing = "Right";
+                                break;
+                            case "Face Left": nLine.action = "Face";
+                                nLine.facing = "Left";
+                                break;
+                        }
+                        lines.Add(nLine);
                     }
 
                     // This is a Dialogue Statement
                     if (line_values.Length == 3)
                     {
-                        DialogueLine dLine = new DialogueLine(line_values[0], line_values[1], int.Parse(line_values[2]));
-                        lines.Add(dLine);
+                        //DialogueLine dLine = new DialogueLine(line_values[0], line_values[1], int.Parse(line_values[2]));
+                        //lines.Add(dLine);
+
+                        Line nLine = new Line("Dialogue");
+                        nLine.nm = line_values[0];
+                        nLine.content = line_values[1];
+                        nLine.pose = int.Parse(line_values[2]);
+                        lines.Add(nLine);
                     }
                 }
             }

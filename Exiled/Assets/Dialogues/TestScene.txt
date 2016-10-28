@@ -1,4 +1,5 @@
-Start
+Prince|Face Right
+Prince|Move Left
 Prince|Welcome to Exiled!|0
 Prince|I am the Prince, and I'll be walking you through this demo build.|0
 Prince|As you've probably already noticed by now, you can left click or press the spacebar to advance the text.|3
@@ -7,9 +8,18 @@ Prince|But as of right now, none of that has been implemented yet...|2
 Prince|Don't worry though, Kiernan is working on adding these features, and much more to the game!|3
 Prince|In this build of the game, you can have characters talk and have images change as they talk.|0
 Prince|You can see the format for how to do this in the SceneFormat.txt file. Try messing around with this yourself!|0
+Prince|New to this build is the inclusion of Action Statements!|5
+Prince|These statements will allow characters to perform various acitons, such as movements across the screen.|3
+Prince|Face Left
+Prince|In this build, characters can now change the direction that they are facing, like I just did.|0
+Prince|Move Right
+Prince|Characters can also move across the screen to set positions. This is me moving to the Right position.|0
+Prince|Right now, the only positions that characters can move to are the positions Left and Right, however there are more being worked on.|0
+Prince|A list of all of the positions that are being worked on can be found in the Positions.txt file.|0
 Prince|That's all for this build!|0
-Prince|The todo list for the next build is to have Action Statements, statements that allow you to move the character around the screen.|0
-Prince|Kiernan is also going to be working on adding a system to create menus that allow you to ask the player to make a choice!|0
+Prince|The todo list for the next build is to expand upon the aciton statements by adding in more positions for the characters to move to.|0
+Prince|This is on top of adding a statement that will allow you to instantly position a character at the position you specify.|0
+Prince|Kiernan is also going to be working on adding a system to create menus that allow you to ask the player to make a choice in the future!|0
 Prince|And after that's all done, it'll be moving onto creating a system to train skills and doing skill checks!|5
 Prince|There will also be combat, building relationships with other characters, moving between towns and kingdoms...|5
 Prince|But a lot of that stuff will be far off in the future.|4

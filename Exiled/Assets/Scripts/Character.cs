@@ -8,7 +8,9 @@ public class Character : MonoBehaviour {
 	Sprite characterSprite;
 	public List<Sprite> poses = new List<Sprite>();
     public string position;
+    public string movePosition;
     public string facing;
+    public float moveSpeed = 0.20f; // Speed for moving, default is 2
 
 	public Dictionary<string, Sprite> cposes = new Dictionary<string, Sprite>();
 

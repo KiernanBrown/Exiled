@@ -1,12 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Line : MonoBehaviour
+public class Line
 {
-    string type;
+    public string type;
 
-	// Use this for initialization
-	void Start ()
+    // Information for a dialogue line
+    public string nm;
+    public string content;
+    public int pose;
+
+    // Information for an action statement
+    public string action;
+    public string moving;
+    public string facing;
+
+    // Use this for initialization
+    void Start ()
     {
 	
 	}
@@ -24,4 +34,9 @@ public class Line : MonoBehaviour
 
         }
 	}
+
+    public Line(string t)
+    {
+        type = t;
+    }
 }
